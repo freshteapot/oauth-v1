@@ -8,15 +8,16 @@ All in one oauth script.
 
 
 <pre>
+&lt;?php
 include "./oauth.php";
 $config = array();
-$config['consumer_key'] = 'CONSUMER_KEY';
+$config['consumer_key'] = 'CHANGEME_CONSUMER_KEY';
 $config['consumer_signature_method']= 'HMAC-SHA1';
-$config['consumer_secret'] = 'CONSUMER_SECRET';
+$config['consumer_secret'] = 'CHANGEME_CONSUMER_SECRET';
 $config['timestamp'] = $_SERVER['REQUEST_TIME'];
 
-$token='TOKEN';
-$token_secret='TOKEN_SECRET';
+$token='CHANGEME_TOKEN';
+$token_secret='CHANGEME_TOKEN_SECRET';
 
 $url = 'https://api.twitter.com/1.1/account/settings.json';
 
